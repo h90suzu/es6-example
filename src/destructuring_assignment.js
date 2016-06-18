@@ -11,3 +11,12 @@ console.log(value1, value2); // 10 20
 [value1, value2] = [value2, value1];
 
 console.log(value1, value2); // 20 10
+
+var human = {
+    name: 'taro',
+    age: 20,
+};
+
+var { name } = human;
+
+console.log(name); // taro

@@ -115,6 +115,7 @@ I'm 20.
 
 - 複数の変数に同時に代入
 - 値の入れ替え
+- 指定のプロパティの抽出
 
 ```js
 var [name, age] = ['taro', 20];
@@ -128,6 +129,15 @@ var value2 = 20;
 [value1, value2] = [value2, value1];
 
 console.log(value1, value2); // 20 10
+
+var human = {
+	name: 'taro',
+	age: 20,
+};
+
+var { name } = human;
+
+console.log(name); // taro
 ```
 
 ## spread operator
